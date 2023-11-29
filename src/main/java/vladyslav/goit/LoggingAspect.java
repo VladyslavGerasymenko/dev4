@@ -1,4 +1,4 @@
-package dev4.goit;
+package vladyslav.goit;
 
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;
@@ -8,14 +8,14 @@ import org.aspectj.lang.annotation.Before;
 public class LoggingAspect {
     private static boolean loggingEnabled = true;
 
-    @Before("execution(* sergey.goit.Convector.convert(String)) && args(input)")
+    @Before("execution(* vladyslav.goit.Convector.convert(String)) && args(input)")
     public void beforeConvertMethod(String input) {
         if (loggingEnabled) {
             System.out.println("Original Value: " + input);
         }
     }
 
-    @AfterReturning("execution(* sergey.goit.Convector.convert(String))")
+    @AfterReturning("execution(* vladyslav.goit.Convector.convert(String))")
     public void afterConvertMethod(String result) {
         if (loggingEnabled) {
             System.out.println("Converted : " + result);

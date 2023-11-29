@@ -1,4 +1,4 @@
-package dev4.goit;
+package vladyslav.goit;
 
 public class Main {
 

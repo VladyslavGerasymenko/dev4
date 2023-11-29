@@ -1,4 +1,4 @@
-package dev4.goit;
+package vladyslav.goit;
 
 public class LoggingControl implements LoggingControlMBean {
     private boolean loggingEnabled = true;
